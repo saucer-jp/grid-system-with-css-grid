@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <title>CSS GridのSubgridでグリッドシステムを試す</title>
+        <link rel="stylesheet" type="text/css" href="./main.css">
+    </head>
+    <body>
+        <header>
+            header
+        </header>
+        <main>
+            <section class="title-section">
+                <h2>今すぐ始めるAstro入門｜第1回</h2>
+                <h1>Astroの特徴</h1>
+                <p>AstroはWebフレームワークのひとつです。Next.jsやGatsbyなどと伍する機能をもち、独自の設計思想があります。今回はAstroの特徴の紹介と、大まかな開発手順を体験してもらうことを目的としています。</p>
+                <time>2022年8月12日 発行</time>
+            </section>
+            <section class="body-text-section">
+                <h1>Astroと他のWebフレームワークの比較</h1>
+                <p>Astroとすでに開発現場で使われているほかのWebフレームワークとは、どのようなコンセプトの違いがあるのでしょうか。</p>
+                <p>たとえばNext.jsのようなWebフレームワークは、ページ間のシームレスなページ遷移が実現できたり、複数ページにわたっての状態管理が容易であったり、Webアプリケーションを作る上で役に立つような機能があります。これには、クライアントサイド（JavaScript）でページをルーティングする必要があるので、動作を高度に制御するためのJavaScriptがブラウザでも読み込まれます。</p>
+                <p>それに対して、Astroは従来どおりのWebサイトと同じようにクライアント側でルーティングせず、ビルド時にクライアントサイドのJavaScriptをできるだけ取り除き、そもそものサイトの表示に必要なファイルの容量を減らします。そもそも読み込むファイルの容量が減ることでサイトは否が応でも高速になるというわけです。</p>
+                <p>どちらのWebフレームワークを使うのが良いかというのは一概に言える話ではありません。</p>
+            </section>
+            <section class="code-section">
+<pre>
+{
+    "name": "@example/minimal",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "devDependencies": {
+        "astro": "^1.0.1"
+    }
+}
+</pre>
+            </section>
+            <section class="body-text-section">
+                <p>とは言え、Astroで作成したサイトのほうが従来どおりのHTML＋CSSが中心で、ルーティングなどのJavaScriptが一切必要ない分、開発者にとって構造や挙動が把握しやすいサイトになるとは言えるでしょう。</p>
+                <p>同じようにクライアント側でルーティングするようなことはせず、生成されたサイトの全容が把握しやすいという点でAstroはEleventy*と似た特徴をもちます。</p>
+            </section>
+            <section class="card-section">
+                <div class="card">
+                    <h2>今すぐ始めるAstro入門｜第2回</h2>
+                    <h1>Astroコンポーネントの実装</h1>
+                    <p>Astroでの開発の基礎として、Astroコンポーネントの実装を解説します。基本は素のHTMLとCSSのような書き味で実装を進めることができます。</p>
+                </div>
+                <div class="card">
+                    <h2>今すぐ始めるAstro入門｜第3回</h2>
+                    <h1>UIコンポーネントの導入と実装</h1>
+                    <p>ユーザーによって開閉可能な、JavaScriptを必要とするインタラクティブなハンバーガーメニューをPreactで実装します。Preactの導入から、コンポーネントの実装までをやってみましょう。</p>
+                </div>
+                <div class="card">
+                    <h2>今すぐ始めるAstro入門｜第4回</h2>
+                    <h1>クライアントサイドでJavaScriptを動作させる</h1>
+                    <p>Preactで実装したハンバーガーメニューをクライアントサイドで動作するように、JavaScriptの読み込み指定を行います。このような読み込みの制御ができるのがAstroの特徴のひとつです。</p>
+                </div>
+                <div class="card">
+                    <h2>今すぐ始めるAstro入門｜第5回</h2>
+                    <h1>AstroファイルでのCSSの書き方</h1>
+                    <p>AstroファイルにおけるCSSの書き方にはいくつかの方法があります。この記事ではCSSを適用させたい箇所を、個別コンポーネントだけの場合とサイト全体の場合の2つのスコープに分けて、CSSの記述方法を解説します。</p>
+                </div>
+            </section>
+            <section class="body-text-section">
+                <h1>UIフレームワークの資産を自由に使える</h1>
+                <p>EleventyではNunjucks（.njk）やLiquid（.liquid）をはじめとした、たくさんのHTMLテンプレート言語に対応していますが、それらはHTMLのテンプレート言語です。そのため、その書き味はWordPressに近いようなテンプレートエンジンベースのものになります。</p>
+                <p>これはGatsbyやNext.jsなどのようなコンポーネントベースの開発に慣れている人にとっては、少々とっつきにくい部分があります。</p>
+                <p>対して、Astroはコンポーネントごとに以下のUIフレームワークを自由に使え、コンポーネントベースの開発ができます。</p>
+            </section>
+            <section class="image-section">
+                <div></div>
+            </section>
+        </main>
+    </body>
+</html>
